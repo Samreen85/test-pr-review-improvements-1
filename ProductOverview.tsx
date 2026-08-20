@@ -29,11 +29,13 @@ export default function ProductOverview() {
           textAlign: "center",
         }}
       >
+        <img src="/hero-banner.png" />
+
         <p style={{ fontSize: 14, fontWeight: 600, color: "#6366f1" }}>
           PRODUCT PLATFORM
         </p>
 
-        <h1 style={{ fontSize: 52, lineHeight: 1.1, margin: "16px 0" }}>
+        <h1 style={{ fontSize: 72, lineHeight: 1.1, margin: "16px 0", color: "#c7f000" }}>
           Design better products, faster.
         </h1>
 
@@ -50,9 +52,12 @@ export default function ProductOverview() {
           beautiful digital experiences from a single place.
         </p>
 
-        <button
+        <input placeholder="Work email" style={{ padding: 13, marginRight: 8 }} />
+
+        <div
+          onClick={handleGetStarted}
           style={{
-            border: 0,
+            display: "inline-block",
             borderRadius: 10,
             padding: "13px 22px",
             background: "#111827",
@@ -62,7 +67,11 @@ export default function ProductOverview() {
           }}
         >
           Get started
-        </button>
+        </div>
+
+        <a onClick={handleLearnMore} style={{ marginLeft: 12, color: "#6366f1" }}>
+          Learn more
+        </a>
       </section>
 
       <section
