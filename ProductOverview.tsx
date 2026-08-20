@@ -29,11 +29,24 @@ export default function ProductOverview() {
           textAlign: "center",
         }}
       >
-        <p style={{ fontSize: 14, fontWeight: 600, color: "#6366f1" }}>
+        <p
+          style={{
+            fontSize: 14,
+            fontWeight: 600,
+            color: "#6366f1",
+            marginBottom: 28,
+          }}
+        >
           PRODUCT PLATFORM
         </p>
 
-        <h1 style={{ fontSize: 52, lineHeight: 1.1, margin: "16px 0" }}>
+        <h1
+          style={{
+            fontSize: 60,
+            lineHeight: 1.1,
+            margin: "16px 0",
+          }}
+        >
           Design better products, faster.
         </h1>
 
@@ -54,7 +67,7 @@ export default function ProductOverview() {
           style={{
             border: 0,
             borderRadius: 10,
-            padding: "13px 22px",
+            padding: "18px 36px",
             background: "#111827",
             color: "#fff",
             fontWeight: 600,
@@ -72,7 +85,7 @@ export default function ProductOverview() {
           padding: "0 24px 80px",
           display: "grid",
           gridTemplateColumns: "repeat(3, 1fr)",
-          gap: 20,
+          gap: 10,
         }}
       >
         {features.map((feature) => (
@@ -83,12 +96,26 @@ export default function ProductOverview() {
               border: "1px solid #e5e7eb",
               borderRadius: 16,
               background: "#fff",
+              minHeight: 190,
             }}
           >
-            <h2 style={{ fontSize: 20, marginBottom: 10 }}>
+            <h2
+              style={{
+                fontSize: 20,
+                marginBottom: 10,
+                maxWidth: 150,
+              }}
+            >
               {feature.title}
             </h2>
-            <p style={{ color: "#6b7280", lineHeight: 1.6, margin: 0 }}>
+
+            <p
+              style={{
+                color: "#6b7280",
+                lineHeight: 1.6,
+                margin: 0,
+              }}
+            >
               {feature.description}
             </p>
           </article>
